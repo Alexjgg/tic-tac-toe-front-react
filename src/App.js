@@ -1,7 +1,7 @@
 
 import {useState} from 'react';
-import confetti from "canvas-confetti"
-import {Square} from "./componets/Square.jsx"
+import confetti from 'canvas-confetti'
+import {Square} from './componets/Square.jsx'
 import { TURNS, WINNER_COMBOS } from './constants.js';
 import { WinnerModal } from './componets/WinnerModal.jsx';
 
@@ -21,8 +21,8 @@ function App() {
       const [a, b, c] = combo
       if(
         boardToCheck[a] &&
-        boardToCheck[a]==boardToCheck[b] &&
-        boardToCheck[a]==boardToCheck[c]
+        boardToCheck[a]===boardToCheck[b] &&
+        boardToCheck[a]===boardToCheck[c]
       ){
         return boardToCheck[a]
      
